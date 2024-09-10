@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# Contact Management App with Charts and Maps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Click [here](https://contact-management-app-assig.vercel.app/) for the demo.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a contact management application featuring a dashboard with COVID-19 charts and maps. It uses React with TypeScript, TailwindCSS for styling, React Router v6 for routing, and React Query for data fetching and state management.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Contact Management**:
+  - Add, edit, and delete contacts.
+  - View detailed information for each contact.
+  - List all contacts with Redux state management.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Dashboard**:
+  - Line chart showing COVID-19 case fluctuations over time.
+  - Interactive Leaflet map with markers indicating COVID-19 statistics by country.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, TypeScript, React Router v6, React Query
+- **Styling**: TailwindCSS
+- **Mapping**: React Leaflet
+- **Charts**: Chart.js
+- **State Management**: Redux-toolkit
 
-### `npm run build`
+## API Endpoints
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **World Wide Data of Cases**: [https://disease.sh/v3/covid-19/all](https://disease.sh/v3/covid-19/all)
+  - Provides global COVID-19 statistics including total cases, deaths, and recoveries.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Country-Specific Data of Cases**: [https://disease.sh/v3/covid-19/countries](https://disease.sh/v3/covid-19/countries)
+  - Provides COVID-19 statistics for individual countries.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Historical Graph Data for Cases**: [https://disease.sh/v3/covid-19/historical/all?lastdays=all](https://disease.sh/v3/covid-19/historical/all?lastdays=all)
+  - Provides historical data of COVID-19 cases, deaths, and recoveries over time for graph plotting.
 
-### `npm run eject`
+## Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Ensure you have the following installed:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- npm or yarn (for dependency management)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Notes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **State Management**: Redux is used for managing contact data.
+- **Responsive Design**: The application is designed to be responsive and functional on both desktop and mobile devices.
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the application locally, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/1shakti/contact-management-app-assig.git
+   cd contact-management-app-assig
+   ```
+
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+    or
+
+    ```bash
+    npm install
+    ```    
+
+3. **Run the Application**:
+    ```bash
+    npm start
+    ```
+    or
+    
+    ```bash
+    yarn start
+    ```    
+
+## Building for Production
+To create a production build of the application:
+3. **Build the Project**:
+    ```bash
+    npm run build
+    ```
+    or
+    
+    ```bash
+    yarn build
+    ```
