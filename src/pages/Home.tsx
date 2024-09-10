@@ -1,10 +1,8 @@
-import React from 'react'
-import ContactContainer from '../containers/contact'
+import React from "react";
+import ContactContainer from "../containers/contact";
 
 function Home() {
-  return (
-    <ContactContainer />
-  )
+  return <ContactContainer />;
 }
 
-export default Home
+export default Home;

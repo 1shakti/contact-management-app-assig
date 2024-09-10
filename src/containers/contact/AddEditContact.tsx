@@ -67,7 +67,6 @@ function AddEditContact() {
 
     navigate("/");
   };
-  console.log(formData);
 
   return (
     <ContactForm

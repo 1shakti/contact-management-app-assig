@@ -25,13 +25,13 @@ function ContactItem({
       </span>
       <button
         onClick={() => handleEditForm(contact.id)}
-        className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 min-w-4 rounded-md"
+        className="bg-green-500 hover:bg-green-600 font-medium text-white w-24 h-9 rounded-md flex items-center justify-center"
       >
         Edit
       </button>
       <button
         onClick={() => handleDeleteContact(contact.id)}
-        className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 min-w-4 rounded-md ml-2"
+        className="bg-red-500 hover:bg-red-600 font-medium text-white w-24 h-9 rounded-md flex items-center justify-center"
       >
         Delete
       </button>

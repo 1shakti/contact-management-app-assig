@@ -1,4 +1,3 @@
-
 import { ChangeEventHandler, MouseEventHandler } from "react";
 import { ContactInte } from "../../types";
 
@@ -15,7 +14,7 @@ function ContactForm({
   handleSubmit,
   formData,
   title,
-  buttonLabel
+  buttonLabel,
 }: ContactFormProps) {
   return (
     <div className="flex items-center justify-center h-full bg-gray-300 p-4">
@@ -85,7 +84,7 @@ function ContactForm({
         <div className="mt-6 flex items-center justify-center">
           <button
             onClick={handleSubmit}
-            className=" bg-gray-400 text-black px-1.5 py-2 rounded-md text-lg hover:bg-gray-500 transition"
+            className=" bg-gray-400 text-black font-medium px-1.5 py-2 rounded-md text-lg hover:bg-gray-500 transition"
           >
             {buttonLabel}
           </button>
