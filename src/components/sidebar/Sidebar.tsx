@@ -13,7 +13,7 @@ function Sidebar() {
   return (
     <div className="relative">
       <button
-        className={`fixed top-20 left-2 z-50 text-white bg-gray-500 rounded-lg p-2 focus:outline-none transition-transform duration-300 ${
+        className={`fixed top-20 left-2 z-[2000] text-white bg-gray-500 rounded-lg p-2 focus:outline-none transition-transform duration-300 ${
           isOpen ? "translate-x-[250px]" : "translate-x-0"
         }`}
         onClick={handleMenuClick}
@@ -22,7 +22,7 @@ function Sidebar() {
       </button>
 
       <div
-        className={`fixed top-16 left-0 h-[95vh] bg-white font-bold transition-transform transform ${
+        className={`fixed top-16 left-0 h-[95vh] z-[2000] bg-white font-bold transition-transform transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } ${isOpen ? "w-64" : "w-16"} transition-all duration-300`}
       >
